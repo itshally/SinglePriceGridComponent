@@ -1,0 +1,145 @@
+body {
+  background-color: #e5eff5;
+  width: 100%;
+  height: 100%;
+  font-family: "Karla", sans-serif;
+}
+
+body .container {
+  width: 35%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .container .row {
+  background-color: white;
+  padding: 1.5rem 2.5rem;
+  color: #98a6bd;
+  font-size: 16px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+body .container .row h1 {
+  color: #2ab2af;
+}
+
+body .container .row h2 {
+  color: #c0df34;
+}
+
+body .container .row:last-child {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+}
+
+body .container .row:last-child .col {
+  background-color: #2ab2af;
+  padding: 1rem 2.5rem;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #FFFFFF;
+}
+
+body .container .row:last-child .col:first-child {
+  -webkit-filter: brightness(92.5%);
+          filter: brightness(92.5%);
+  border-bottom-left-radius: 8px;
+}
+
+body .container .row:last-child .col:first-child p {
+  margin: 0.5rem auto;
+}
+
+body .container .row:last-child .col:first-child .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+body .container .row:last-child .col:first-child .row .col:first-child {
+  padding: 0;
+  font-size: 2rem;
+  width: auto;
+  font-weight: 700;
+  -webkit-filter: none;
+          filter: none;
+  border-radius: 0;
+}
+
+body .container .row:last-child .col:first-child .row .col:last-child {
+  width: 100%;
+  padding: 0.5rem;
+  color: #e5eff5;
+  border-radius: 0;
+}
+
+body .container .row:last-child .col:first-child #signUpBtn {
+  background-color: #c0df34;
+  font-family: "Karla", sans-serif;
+  border-color: transparent;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: 700;
+  padding: 1rem;
+  margin: 1.5rem auto;
+  color: #FFFFFF;
+  -webkit-box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.22);
+}
+
+body .container .row:last-child .col:first-child #signUpBtn, body .container .row:last-child .col:first-child #signUpBtn:focus, body .container .row:last-child .col:first-child #signUpBtn:active {
+  border: none;
+  border-color: transparent;
+  outline: none;
+  outline-color: transparent;
+}
+
+body .container .row:last-child .col:first-child #signUpBtn:hover {
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
+}
+
+body .container .row:last-child .col:last-child {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-bottom-right-radius: 8px;
+}
+
+body .container .row:last-child .col:last-child ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+body .container .row:last-child .col:last-child ul li {
+  font-size: 14px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */
