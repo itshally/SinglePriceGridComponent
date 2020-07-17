@@ -1,48 +1,96 @@
-body {
+html {
+  width: auto;
+  height: 100%;
+  padding: 0;
+  margin: 0;
   background-color: #e5eff5;
-  width: 100%;
+}
+
+html body {
+  width: auto;
+  max-width: 1440px;
   height: 100%;
   font-family: "Karla", sans-serif;
+  padding: 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body .container {
-  width: 35%;
+html body .container {
+  width: 45%;
   height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  padding: 0;
+  margin: auto;
 }
 
-body .container .row {
-  background-color: white;
-  padding: 1.5rem 2.5rem;
+html body .container .row {
+  width: auto;
+  height: auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+html body .container .row:first-child {
+  background-color: #FFFFFF;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   color: #98a6bd;
   font-size: 16px;
+  padding: 2.5rem;
+  padding-bottom: 1.5rem;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .container .row h1 {
+html body .container .row:first-child h1 {
   color: #2ab2af;
+  padding: 0;
+  margin: 0;
+  letter-spacing: -1px;
 }
 
-body .container .row h2 {
+html body .container .row:first-child h2 {
   color: #c0df34;
 }
 
-body .container .row:last-child {
-  padding: 0;
+html body .container .row:last-child {
+  height: auto;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
 }
 
-body .container .row:last-child .col {
+html body .container .row:last-child .row {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: red;
+}
+
+html body .container .row:last-child .col {
   background-color: #2ab2af;
-  padding: 1rem 2.5rem;
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -58,27 +106,35 @@ body .container .row:last-child .col {
   color: #FFFFFF;
 }
 
-body .container .row:last-child .col:first-child {
+html body .container .row:last-child .col:first-child {
   -webkit-filter: brightness(92.5%);
           filter: brightness(92.5%);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-line-pack: left;
+      align-content: left;
+  padding: 1.5rem 2.5rem;
   border-bottom-left-radius: 8px;
 }
 
-body .container .row:last-child .col:first-child p {
-  margin: 0.5rem auto;
+html body .container .row:last-child .col:first-child p {
+  margin: 0.5rem 0;
+  padding: 0;
 }
 
-body .container .row:last-child .col:first-child .row {
-  width: 100%;
+html body .container .row:last-child .col:first-child .row {
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0;
   margin: 0;
-  border: none;
+  background-color: transparent;
 }
 
-body .container .row:last-child .col:first-child .row .col:first-child {
+html body .container .row:last-child .col:first-child .row .col:first-child {
   padding: 0;
   font-size: 2rem;
   width: auto;
@@ -88,19 +144,21 @@ body .container .row:last-child .col:first-child .row .col:first-child {
   border-radius: 0;
 }
 
-body .container .row:last-child .col:first-child .row .col:last-child {
-  width: 100%;
+html body .container .row:last-child .col:first-child .row .col:last-child {
+  width: auto;
   padding: 0.5rem;
   color: #e5eff5;
   border-radius: 0;
+  font-weight: 0;
 }
 
-body .container .row:last-child .col:first-child #signUpBtn {
+html body .container .row:last-child .col:first-child #signUpBtn {
   background-color: #c0df34;
   font-family: "Karla", sans-serif;
   border-color: transparent;
   border-radius: 8px;
   width: 100%;
+  max-width: 50vmax;
   font-weight: 700;
   padding: 1rem;
   margin: 1.5rem auto;
@@ -109,19 +167,22 @@ body .container .row:last-child .col:first-child #signUpBtn {
   box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.22);
 }
 
-body .container .row:last-child .col:first-child #signUpBtn, body .container .row:last-child .col:first-child #signUpBtn:focus, body .container .row:last-child .col:first-child #signUpBtn:active {
+html body .container .row:last-child .col:first-child #signUpBtn,
+html body .container .row:last-child .col:first-child #signUpBtn:focus,
+html body .container .row:last-child .col:first-child #signUpBtn:active {
   border: none;
   border-color: transparent;
   outline: none;
   outline-color: transparent;
 }
 
-body .container .row:last-child .col:first-child #signUpBtn:hover {
+html body .container .row:last-child .col:first-child #signUpBtn:hover {
   -webkit-filter: brightness(95%);
           filter: brightness(95%);
 }
 
-body .container .row:last-child .col:last-child {
+html body .container .row:last-child .col:last-child {
+  padding: 1.5rem 2.5rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
@@ -131,15 +192,96 @@ body .container .row:last-child .col:last-child {
   border-bottom-right-radius: 8px;
 }
 
-body .container .row:last-child .col:last-child ul {
+html body .container .row:last-child .col:last-child ul {
   list-style: none;
   margin: 0;
   padding: 0;
   line-height: 1.5;
 }
 
-body .container .row:last-child .col:last-child ul li {
+html body .container .row:last-child .col:last-child ul li {
   font-size: 14px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 768px), (max-width: 1280px) {
+  html body .container {
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 375px), (max-width: 640px) {
+  html {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: 100%;
+  }
+  html body {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  html body .container {
+    margin: auto;
+    width: auto;
+    max-width: none;
+    height: auto;
+    padding: 2.5rem;
+  }
+  html body .container .row {
+    width: auto;
+  }
+  html body .container .row:first-child {
+    padding: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  html body .container .row:first-child h1 {
+    font-size: 1.3rem;
+  }
+  html body .container .row:first-child h2 {
+    font-size: 0.9rem;
+  }
+  html body .container .row:first-child p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  html body .container .row:last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  html body .container .row:last-child .col {
+    padding: 1.5rem;
+    width: auto;
+    border-radius: 0px !important;
+  }
+  html body .container .row:last-child .col h3 {
+    font-size: 1.1rem;
+  }
+  html body .container .row:last-child .col:first-child {
+    padding: 0.5rem 1.5rem;
+  }
+  html body .container .row:last-child .col:first-child #signUpBtn {
+    margin: 1rem auto;
+  }
+  html body .container .row:last-child .col:last-child {
+    padding: 0.5rem 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom-left-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
