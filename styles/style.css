@@ -204,6 +204,19 @@ html body .container .row:last-child .col:last-child ul li {
   font-weight: 400;
 }
 
+html body footer .attribution {
+  color: #2ab2af;
+}
+
+html body footer a {
+  color: #98a6bd;
+  text-decoration: none;
+}
+
+html body footer a:hover {
+  color: #c0df34;
+}
+
 @media screen and (max-width: 768px), (max-width: 1280px) {
   html body .container {
     width: 40rem;
