@@ -154,10 +154,12 @@ html body .container .row:last-child .col:first-child .row .col:last-child {
 
 html body .container .row:last-child .col:first-child #signUpBtn {
   background-color: #c0df34;
+  text-align: center;
+  text-decoration: none;
   font-family: "Karla", sans-serif;
   border-color: transparent;
   border-radius: 8px;
-  width: 100%;
+  width: 85%;
   max-width: 50vmax;
   font-weight: 700;
   padding: 1rem;
