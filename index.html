@@ -16,11 +16,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   
   <div class="container">
-    <div class="row">
+    <div class="row" data-aos="fade-down" data-aos-delay="350" data-aos-duration="1000">
       <h1>Join our community</h1>
   
       <h2>30-day, hassle-free money back guarantee</h2>
@@ -30,7 +31,7 @@
     </div>
   
     <div class="row">
-      <div class="col">
+      <div class="col" data-aos="fade-right" data-aos-delay="350" data-aos-duration="1000">
         <h3>Monthly Subscription</h3>
   
         <div class="row">
@@ -43,7 +44,7 @@
         <a href="#" id="signUpBtn">Sign Up</a>
       </div>
   
-      <div class="col">
+      <div class="col" data-aos="fade-left" data-aos-delay="350" data-aos-duration="1000">
         <h3>Why Us</h3>
         
         <ul>
@@ -66,4 +67,11 @@
     </p>
   </footer>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    anchorPlacement: 'top-bottom'
+  });
+</script>
 </html>
